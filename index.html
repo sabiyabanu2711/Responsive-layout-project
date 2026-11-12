@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NovaTech - Modern Cloud Platform for developers and high-growth engineering teams.">
+  <title>NovaTech — Next-Gen Cloud Intelligence Platform</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts: Inter for clean professional SaaS typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ==============================================
+       HEADER & NAVIGATION (FLEXBOX)
+       ============================================== -->
+  <header class="site-header" id="header">
+    <div class="container nav-wrapper">
+      <a href="#hero" class="brand-logo" aria-label="NovaTech Homepage">
+        <svg class="logo-icon" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect width="28" height="28" rx="8" fill="url(#logo-grad)"/>
+          <path d="M7 14L12 9L16 13L21 8M7 20L13 14L17 18L21 14" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <defs>
+            <linearGradient id="logo-grad" x1="0" y1="0" x2="28" y2="28" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#4F46E5"/>
+              <stop offset="1" stop-color="#06B6D4"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <span class="logo-text">Nova<span>Tech</span></span>
+      </a>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-label="Toggle navigation menu">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+
+      <!-- Navigation Links -->
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#features" class="nav-link">Features</a></li>
+          <li class="nav-item"><a href="#how-it-works" class="nav-link">How it Works</a></li>
+          <li class="nav-item"><a href="#pricing" class="nav-link">Pricing</a></li>
+          <li class="nav-item"><a href="#testimonials" class="nav-link">Reviews</a></li>
+        </ul>
+        <div class="nav-actions">
+          <a href="#pricing" class="btn btn-secondary">Sign In</a>
+          <a href="#pricing" class="btn btn-primary">Start Free Trial</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==============================================
+       MAIN CONTENT
+       ============================================== -->
+  <main id="main-content">
+
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          <span class="badge-text">Nova Cloud Engine v2.4 is Live</span>
+          <a href="#features" class="badge-link" aria-label="Read changelog">&rarr;</a>
+        </div>
+
+        <h1 class="hero-title">
+          Deploy and scale cloud infrastructure <span class="text-gradient">in seconds</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          NovaTech gives engineering teams a resilient, automated cloud platform with multi-region replication, sub-millisecond edge latency, and intelligent observability built-in.
+        </p>
+
+        <!-- Hero Actions (Flexbox) -->
+        <div class="hero-cta-group">
+          <a href="#pricing" class="btn btn-primary btn-lg">
+            <span>Get Started for Free</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+          <a href="#how-it-works" class="btn btn-outline btn-lg">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            <span>Watch Demo (2 min)</span>
+          </a>
+        </div>
+
+        <p class="hero-meta">No credit card required &bull; 14-day full feature trial &bull; Cancel anytime</p>
+
+        <!-- Hero Dashboard Mockup -->
+        <div class="hero-preview-wrapper">
+          <div class="hero-window">
+            <div class="window-bar">
+              <div class="window-dots">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+              </div>
+              <div class="window-address">https://cloud.novatech.io/clusters/prod-east</div>
+              <div class="window-status"><span class="pulse-indicator"></span> Operational</div>
+            </div>
+
+            <div class="window-body">
+              <div class="dashboard-kpi-row">
+                <div class="kpi-card">
+                  <span class="kpi-label">Active Edge Nodes</span>
+                  <div class="kpi-value">1,482 <span class="tag-positive">+14%</span></div>
+                </div>
+                <div class="kpi-card">
+                  <span class="kpi-label">Average Latency</span>
+                  <div class="kpi-value">12.4ms <span class="tag-positive">Fast</span></div>
+                </div>
+                <div class="kpi-card">
+                  <span class="kpi-label">Requests / Sec</span>
+                  <div class="kpi-value">348,200 <span class="tag-positive">+32%</span></div>
+                </div>
+                <div class="kpi-card">
+                  <span class="kpi-label">Uptime SLA</span>
+                  <div class="kpi-value">99.998% <span class="tag-neutral">Optimal</span></div>
+                </div>
+              </div>
+
+              <div class="mock-terminal">
+                <div class="terminal-line"><span class="cmd-prompt">$</span> nova deploy --env=production --region=global</div>
+                <div class="terminal-line text-muted">[1/4] Packaging serverless functions and asset bundles... Done (0.8s)</div>
+                <div class="terminal-line text-muted">[2/4] Distributing artifacts to 180 edge points of presence... Synced</div>
+                <div class="terminal-line text-emerald">[3/4] SSL certificates auto-issued and verified across domains</div>
+                <div class="terminal-line text-cyan">&check; Deployment complete: https://api.production.app (Total time: 2.1s)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- TRUSTED TEAMS / CLIENTS (FLEXBOX) -->
+    <section class="logos-section" aria-label="Trusted by companies worldwide">
+      <div class="container">
+        <p class="logos-label">TRUSTED BY DEVELOPERS AT HIGH-VELOCITY ENGINEERING TEAMS</p>
+        <div class="logos-row">
+          <div class="client-logo"><span class="logo-badge">&Delta;</span> Velocity.dev</div>
+          <div class="client-logo"><span class="logo-badge">&diams;</span> CloudMatrix</div>
+          <div class="client-logo"><span class="logo-badge">&infin;</span> SyncNode</div>
+          <div class="client-logo"><span class="logo-badge">&equiv;</span> DataSprint</div>
+          <div class="client-logo"><span class="logo-badge">&Omicron;</span> HyperScale</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS SECTION (CSS GRID) -->
+    <section class="stats-section" aria-label="Key Performance Statistics">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-card">
+            <h3 class="stat-number">99.99%</h3>
+            <p class="stat-label">Guaranteed Uptime SLA</p>
+          </div>
+          <div class="stat-card">
+            <h3 class="stat-number">250M+</h3>
+            <p class="stat-label">Daily API Requests Handled</p>
+          </div>
+          <div class="stat-card">
+            <h3 class="stat-number">&lt; 15ms</h3>
+            <p class="stat-label">Global Edge Response Time</p>
+          </div>
+          <div class="stat-card">
+            <h3 class="stat-number">180+</h3>
+            <p class="stat-label">Worldwide Edge Locations</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES SECTION (CSS GRID) -->
+    <section class="features-section" id="features">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-tag">Powerful Features</span>
+          <h2 class="section-title">Everything you need to ship faster</h2>
+          <p class="section-desc">Engineered for reliability, developer speed, and peak performance under high traffic loads.</p>
+        </div>
+
+        <div class="features-grid">
+          <!-- Card 1 -->
+          <article class="feature-card">
+            <div class="feature-icon-box icon-indigo">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path></svg>
+            </div>
+            <h3 class="feature-title">Ultra-Fast Edge CDN</h3>
+            <p class="feature-text">Serve your static assets, serverless functions, and dynamic workloads from servers closest to your end users worldwide.</p>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="feature-card">
+            <div class="feature-icon-box icon-cyan">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+            </div>
+            <h3 class="feature-title">Bank-Grade Security</h3>
+            <p class="feature-text">End-to-end TLS encryption, DDoS protection, automated SOC2 compliance checks, and web application firewall enabled by default.</p>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="feature-card">
+            <div class="feature-icon-box icon-emerald">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+            </div>
+            <h3 class="feature-title">Git-Driven CI/CD</h3>
+            <p class="feature-text">Push to your GitHub, GitLab, or Bitbucket repository and let NovaTech automatically build, preview, and deploy every commit.</p>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="feature-card">
+            <div class="feature-icon-box icon-amber">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+            </div>
+            <h3 class="feature-title">Real-Time Observability</h3>
+            <p class="feature-text">Trace distributed requests, monitor error rates, inspect logs in real time, and diagnose bottlenecks with instant flame graphs.</p>
+          </article>
+
+          <!-- Card 5 -->
+          <article class="feature-card">
+            <div class="feature-icon-box icon-purple">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+            </div>
+            <h3 class="feature-title">Multi-Region Routing</h3>
+            <p class="feature-text">Smart DNS routing automatically directs users around regional outages, maintaining seamless uptime and continuous failover.</p>
+          </article>
+
+          <!-- Card 6 -->
+          <article class="feature-card">
+            <div class="feature-icon-box icon-rose">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            </div>
+            <h3 class="feature-title">Zero-Downtime Rollouts</h3>
+            <p class="feature-text">Conduct canary releases and blue-green deployments with instantaneous rollbacks if anomalous error rates are ever detected.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS SECTION (FLEXBOX SPLIT LAYOUTS) -->
+    <section class="how-section" id="how-it-works">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-tag">Seamless Workflow</span>
+          <h2 class="section-title">Designed for developer happiness</h2>
+          <p class="section-desc">From your terminal to global production in three effortless steps.</p>
+        </div>
+
+        <!-- Split Row 1 (Flexbox) -->
+        <div class="split-row">
+          <div class="split-content">
+            <span class="step-num">Step 01</span>
+            <h3 class="split-title">Connect your repository in one click</h3>
+            <p class="split-text">NovaTech integrates natively with Git providers. Select your repository and our build engine automatically detects your framework, sets up environment variables, and configures production pipelines.</p>
+            <ul class="check-list">
+              <li><span class="check-icon">&check;</span> Automatic Node, Python, Go, and Rust detection</li>
+              <li><span class="check-icon">&check;</span> Encrypted secrets and environment variables</li>
+              <li><span class="check-icon">&check;</span> Automatic preview URLs on pull requests</li>
+            </ul>
+          </div>
+          <div class="split-visual">
+            <div class="code-card">
+              <div class="code-header">
+                <span class="code-tab active">nova.config.ts</span>
+                <span class="code-badge">TypeScript</span>
+              </div>
+              <pre class="code-body"><code><span class="c-keyword">import</span> { defineConfig } <span class="c-keyword">from</span> <span class="c-str">'@novatech/core'</span>;
+
+<span class="c-keyword">export default</span> defineConfig({
+  <span class="c-prop">regions</span>: [<span class="c-str">'us-east-1'</span>, <span class="c-str">'eu-west-1'</span>, <span class="c-str">'ap-southeast'</span>],
+  <span class="c-prop">edgeCache</span>: {
+    <span class="c-prop">ttl</span>: <span class="c-num">86400</span>,
+    <span class="c-prop">staleWhileRevalidate</span>: <span class="c-num">3600</span>
+  },
+  <span class="c-prop">autoScale</span>: { <span class="c-prop">min</span>: <span class="c-num">2</span>, <span class="c-prop">max</span>: <span class="c-num">50</span> }
+});</code></pre>
+            </div>
+          </div>
+        </div>
+
+        <!-- Split Row 2 (Flexbox - Inverted) -->
+        <div class="split-row split-row-reverse">
+          <div class="split-content">
+            <span class="step-num">Step 02</span>
+            <h3 class="split-title">Instant global distribution and analytics</h3>
+            <p class="split-text">Your application is immediately compiled into optimized edge containers and propagated across 180+ tier-1 datacenters. Monitor traffic spikes and latency histograms live without setting up third-party agents.</p>
+            <ul class="check-list">
+              <li><span class="check-icon">&check;</span> Instant automated TLS and wildcard domains</li>
+              <li><span class="check-icon">&check;</span> Sub-millisecond serverless cold starts</li>
+              <li><span class="check-icon">&check;</span> Real-time Prometheus metrics exporter</li>
+            </ul>
+          </div>
+          <div class="split-visual">
+            <div class="metrics-visual-card">
+              <div class="visual-header">
+                <h4>Cluster Latency (Global P99)</h4>
+                <span class="badge-live">Live Sync</span>
+              </div>
+              <div class="chart-bars">
+                <div class="bar-col"><div class="bar" style="height: 45%;"></div><span>US-E</span></div>
+                <div class="bar-col"><div class="bar" style="height: 60%;"></div><span>US-W</span></div>
+                <div class="bar-col"><div class="bar" style="height: 35%;"></div><span>EU-C</span></div>
+                <div class="bar-col"><div class="bar" style="height: 75%;"></div><span>AP-S</span></div>
+                <div class="bar-col"><div class="bar" style="height: 50%;"></div><span>SA-E</span></div>
+                <div class="bar-col"><div class="bar" style="height: 40%;"></div><span>AF-S</span></div>
+              </div>
+              <div class="visual-footer">
+                <span>Global Average: <strong>14.2ms</strong></span>
+                <span class="text-emerald">&uarr; 38% faster than legacy cloud</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PRICING SECTION (CSS GRID) -->
+    <section class="pricing-section" id="pricing">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-tag">Simple Pricing</span>
+          <h2 class="section-title">Transparent plans that scale with you</h2>
+          <p class="section-desc">Start building for free. Upgrade when your product and team expand.</p>
+        </div>
+
+        <div class="pricing-grid">
+          <!-- Plan 1 -->
+          <article class="pricing-card">
+            <div class="card-header">
+              <h3 class="plan-name">Hobbyist</h3>
+              <p class="plan-desc">Perfect for side projects, portfolio sites, and experimental prototypes.</p>
+              <div class="plan-price">
+                <span class="currency">$</span>
+                <span class="amount">0</span>
+                <span class="duration">/ month</span>
+              </div>
+            </div>
+            <ul class="plan-features">
+              <li>&check; 3 Production Web Projects</li>
+              <li>&check; 100 GB Global Bandwidth</li>
+              <li>&check; Automatic SSL Certificates</li>
+              <li>&check; Community Discord Support</li>
+              <li class="disabled">&cross; Multi-region replication</li>
+              <li class="disabled">&cross; Custom SLA guarantee</li>
+            </ul>
+            <div class="card-cta">
+              <a href="#hero" class="btn btn-outline btn-block">Get Started Free</a>
+            </div>
+          </article>
+
+          <!-- Plan 2 (Featured) -->
+          <article class="pricing-card featured">
+            <div class="featured-badge">Most Popular</div>
+            <div class="card-header">
+              <h3 class="plan-name">Pro Team</h3>
+              <p class="plan-desc">For fast-growing startups and scaling engineering teams needing power.</p>
+              <div class="plan-price">
+                <span class="currency">$</span>
+                <span class="amount">29</span>
+                <span class="duration">/ month</span>
+              </div>
+            </div>
+            <ul class="plan-features">
+              <li>&check; Unlimited Deployments</li>
+              <li>&check; 1 TB High-Speed Edge Bandwidth</li>
+              <li>&check; 10 Team Member Seats</li>
+              <li>&check; Priority 24/7 Email & Chat Support</li>
+              <li>&check; Multi-Region Smart Failover</li>
+              <li>&check; Role-Based Access Control</li>
+            </ul>
+            <div class="card-cta">
+              <a href="#hero" class="btn btn-primary btn-block">Start 14-Day Free Trial</a>
+            </div>
+          </article>
+
+          <!-- Plan 3 -->
+          <article class="pricing-card">
+            <div class="card-header">
+              <h3 class="plan-name">Enterprise</h3>
+              <p class="plan-desc">Dedicated infrastructure and bespoke compliance for large organizations.</p>
+              <div class="plan-price">
+                <span class="currency">$</span>
+                <span class="amount">99</span>
+                <span class="duration">/ month</span>
+              </div>
+            </div>
+            <ul class="plan-features">
+              <li>&check; Everything in Pro Plan</li>
+              <li>&check; Dedicated Bare-Metal Edge Nodes</li>
+              <li>&check; 99.999% SLA Uptime Commitment</li>
+              <li>&check; Custom VPC Peering & Dedicated IPs</li>
+              <li>&check; Designated Solutions Architect</li>
+              <li>&check; SOC2 Type II & HIPAA Compliance</li>
+            </ul>
+            <div class="card-cta">
+              <a href="#hero" class="btn btn-outline btn-block">Contact Sales</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION (CSS GRID) -->
+    <section class="testimonials-section" id="testimonials">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-tag">Developer Love</span>
+          <h2 class="section-title">Trusted by thousands of modern teams</h2>
+          <p class="section-desc">Here is what engineering leaders have to say about NovaTech.</p>
+        </div>
+
+        <div class="testimonials-grid">
+          <article class="testimonial-card">
+            <p class="testimonial-quote">
+              &ldquo;Migrating our backend from conventional VMs to NovaTech cut our infrastructure costs by 45% while shaving 120ms off our average response time. The DX is unmatched.&rdquo;
+            </p>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&h=120&q=80" alt="Portrait of Alex Rivera, VP of Engineering at FinScale" class="avatar-img" width="48" height="48" loading="lazy">
+              <div class="author-info">
+                <h4 class="author-name">Alex Rivera</h4>
+                <p class="author-role">VP of Engineering at FinScale</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <p class="testimonial-quote">
+              &ldquo;Our release cycles went from bi-weekly panic to ten confident deploys a day. NovaTech’s preview environments and instant rollbacks give our devs superpowers.&rdquo;
+            </p>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&h=120&q=80" alt="Portrait of Sarah Kowalski, Principal Architect at DataFlow Labs" class="avatar-img" width="48" height="48" loading="lazy">
+              <div class="author-info">
+                <h4 class="author-name">Sarah Kowalski</h4>
+                <p class="author-role">Principal Architect at DataFlow Labs</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CALL TO ACTION BANNER (FLEXBOX) -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-box">
+          <div class="cta-content">
+            <h2 class="cta-title">Ready to accelerate your cloud infrastructure?</h2>
+            <p class="cta-desc">Join over 10,000+ developers building resilient, ultra-fast applications today.</p>
+          </div>
+          <div class="cta-actions">
+            <a href="#pricing" class="btn btn-primary btn-lg">Start Free Now</a>
+            <a href="#features" class="btn btn-outline btn-lg">Explore Docs</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==============================================
+       FOOTER (GRID & FLEXBOX)
+       ============================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      
+      <!-- Footer Columns (CSS Grid) -->
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#hero" class="brand-logo" aria-label="NovaTech Homepage">
+            <svg class="logo-icon" width="24" height="24" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect width="28" height="28" rx="8" fill="url(#logo-grad-footer)"/>
+              <path d="M7 14L12 9L16 13L21 8M7 20L13 14L17 18L21 14" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+              <defs>
+                <linearGradient id="logo-grad-footer" x1="0" y1="0" x2="28" y2="28" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#4F46E5"/>
+                  <stop offset="1" stop-color="#06B6D4"/>
+                </linearGradient>
+              </defs>
+            </svg>
+            <span class="logo-text">Nova<span>Tech</span></span>
+          </a>
+          <p class="footer-tagline">Next-generation global cloud orchestration platform. Built for performance, security, and developer joy.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="col-title">Product</h4>
+          <ul class="col-links">
+            <li><a href="#features">Edge CDN</a></li>
+            <li><a href="#features">Multi-Region Routing</a></li>
+            <li><a href="#features">Serverless Compute</a></li>
+            <li><a href="#pricing">Pricing Plans</a></li>
+            <li><a href="#features">Changelog</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="col-title">Developers</h4>
+          <ul class="col-links">
+            <li><a href="#how-it-works">Documentation</a></li>
+            <li><a href="#how-it-works">API Reference</a></li>
+            <li><a href="#how-it-works">CLI Tool</a></li>
+            <li><a href="#how-it-works">SDK Libraries</a></li>
+            <li><a href="#hero">Platform Status</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="col-title">Company</h4>
+          <ul class="col-links">
+            <li><a href="#testimonials">About Us</a></li>
+            <li><a href="#testimonials">Customers</a></li>
+            <li><a href="#testimonials">Careers</a></li>
+            <li><a href="#testimonials">Privacy Policy</a></li>
+            <li><a href="#testimonials">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer Bottom (Flexbox) -->
+      <div class="footer-bottom">
+        <p class="copyright">&copy; 2026 NovaTech Cloud Inc. All rights reserved.</p>
+        <div class="footer-socials">
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          </a>
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
