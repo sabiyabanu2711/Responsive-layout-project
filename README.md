@@ -132,3 +132,4 @@ Responsive layout project/
 ├── screenshots/      # Folder to store your 360px, 768px, and 1280px screenshots
 └── README.md         # Full documentation and grading submission guide
 ```
+
