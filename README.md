@@ -7,7 +7,8 @@
 
 ## 🚀 Live Demo & Repository
 - **Project Name:** NovaTech — Next-Gen Cloud Intelligence Platform
-- **Live Link Options:** Deploy in 1 click using GitHub Pages, Vercel, or Netlify (instructions below).
+- **GitHub Repository:** [https://github.com/sabiyabanu2711/Responsive-layout-project](https://github.com/sabiyabanu2711/Responsive-layout-project)
+- **Live Demo (GitHub Pages):** [https://sabiyabanu2711.github.io/Responsive-layout-project/](https://sabiyabanu2711.github.io/Responsive-layout-project/)
 - **Core Technologies:** HTML5 (Semantic), CSS3 (Modern Flexbox + Grid, Custom Properties), Vanilla JavaScript.
 
 ---
